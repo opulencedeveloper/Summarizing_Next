@@ -27,9 +27,6 @@ export async function getStaticPaths() {
 
   const meetupsCollection = db.collection("meetups");
 
-  //the first parameter of find is the filter criteria, if its an empty object, youll find all documents
-  //the second paramter determins which field should be returned for every documet
-  //_id: 1, means we are returing only the id only the id field
   const meetups = await meetupsCollection.find({}, { _id: 1 }).toArray();
 
   client.close();

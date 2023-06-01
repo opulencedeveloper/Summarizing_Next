@@ -61,8 +61,6 @@ export async function getStaticProps() {
   };
 }
 
-// //you use this mostly for user-authentication since it runs for every incoming request
-// //eg, a page that needs a user to be authenticated for every request
 // export function getServerSideProps(context) {
 //   const req = context.req;
 //   const res = context.res;
